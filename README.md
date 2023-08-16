@@ -1,5 +1,5 @@
 # vb-controls-wonderful-dropdownlist
-VB6 controls with dynamic and wonderful FlexGrid dropdown suggestion list, 'Best in the world!!!'
+VB6 controls with dynamic and wonderful Flexgrid dropdown suggestion list, 'Best in the world!!!'
 
 ## Textbox with dropdown list
 ![image](https://github.com/skyisveryblue1/vb-controls-wonderful-dropdownlist/assets/119230301/5eae9180-2e4e-44f2-836d-42c6bf1b325b)
