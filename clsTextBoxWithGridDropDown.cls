@@ -184,9 +184,9 @@ Public Sub InitComponent(ByRef frmParent As VB.Form, ByRef txtSearchWord As VB.T
     Set m_frmParent = frmParent
     Set m_txtSearchWord = txtSearchWord
         
-    Set m_dataMain = ControlExists(m_frmParent, "m_dataMain")
+    Set m_dataMain = ControlExists(m_frmParent, "m_dataMain" + idx)
     If m_dataMain Is Nothing Then
-        Set m_dataMain = m_frmParent.Controls.Add("VB.Data", "m_dataMain")
+        Set m_dataMain = m_frmParent.Controls.Add("VB.Data", "m_dataMain" + idx)
     End If
     With m_dataMain
         .Connect = "Access"
