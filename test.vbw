@@ -1,4 +1,5 @@
-frmTextBox = -4, 12, 983, 609, C, 22, 29, 1082, 653, C
-frmFlexGrid = 356, 53, 1247, 599, C, 34, 3, 1082, 548, C
+frmTextBox = -4, 12, 983, 609, , 22, 29, 1082, 653, C
+frmFlexGrid = 356, 53, 1247, 599, Z, 34, 3, 1082, 548, C
 clsGridWithDropDown = 57, 67, 1262, 590, 
 clsTextBoxWithGridDropDown = 132, 174, 1563, 601, 
+clsCopyPasteExelFlexGrid = 44, 58, 1066, 521, 

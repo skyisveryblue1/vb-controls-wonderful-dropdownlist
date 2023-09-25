@@ -174,7 +174,7 @@ Private Sub m_mfgSuggestion_RowColChange()
 End Sub
 
 Public Sub InitComponent(ByRef frmParent As VB.Form, ByRef txtSearchWord As VB.TextBox, ByVal strSelField As String, _
-        strDetailFields() As String, ByVal strDatabase As String, ByVal strRecordSource As String, ByVal idx As String)
+        strDetailFields() As String, ByVal strDatabase As String, ByVal strRecordSource As String, ByVal strIdx As String)
     Dim i As Integer, j As Integer
     Dim nTotalWidth As Integer
     Dim strFieldName As String
@@ -184,9 +184,9 @@ Public Sub InitComponent(ByRef frmParent As VB.Form, ByRef txtSearchWord As VB.T
     Set m_frmParent = frmParent
     Set m_txtSearchWord = txtSearchWord
         
-    Set m_dataMain = ControlExists(m_frmParent, "m_dataMain" + idx)
+    Set m_dataMain = ControlExists(m_frmParent, "m_dataMain" + strIdx)
     If m_dataMain Is Nothing Then
-        Set m_dataMain = m_frmParent.Controls.Add("VB.Data", "m_dataMain" + idx)
+        Set m_dataMain = m_frmParent.Controls.Add("VB.Data", "m_dataMain" + strIdx)
     End If
     With m_dataMain
         .Connect = "Access"
@@ -212,9 +212,9 @@ Public Sub InitComponent(ByRef frmParent As VB.Form, ByRef txtSearchWord As VB.T
         Next
     Next
     
-    Set m_mfgSuggestion = ControlExists(m_frmParent, "m_mfgSuggestion" + idx)
+    Set m_mfgSuggestion = ControlExists(m_frmParent, "m_mfgSuggestion" + strIdx)
     If m_mfgSuggestion Is Nothing Then
-        Set m_mfgSuggestion = m_frmParent.Controls.Add("MSFlexGridLib.MSFlexGrid", "m_mfgSuggestion" + idx)
+        Set m_mfgSuggestion = m_frmParent.Controls.Add("MSFlexGridLib.MSFlexGrid", "m_mfgSuggestion" + strIdx)
     End If
     
     With m_mfgSuggestion
